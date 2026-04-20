@@ -1,20 +1,20 @@
 /* Fontsource imports — must come before @import "tailwindcss" */
-@import "@fontsource/playfair-display/400.css";
-@import "@fontsource/playfair-display/400-italic.css";
-@import "@fontsource/playfair-display/700.css";
-@import "@fontsource/dm-sans/400.css";
-@import "@fontsource/dm-sans/500.css";
-@import "@fontsource/dm-sans/600.css";
-@import "@fontsource/dm-sans/700.css";
+@import "@fontsource/nunito/400.css";
+@import "@fontsource/nunito/600.css";
+@import "@fontsource/nunito/700.css";
+@import "@fontsource/open-sans/400.css";
+@import "@fontsource/open-sans/500.css";
+@import "@fontsource/open-sans/600.css";
+@import "@fontsource/open-sans/700.css";
 
 /* Tailwind v4 — single import replaces @tailwind base/components/utilities */
 @import "tailwindcss";
 
 /* ─── Custom theme (Tailwind v4 CSS-based config) ─────────────────────────── */
 @theme {
-  /* Fonts */
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-sans: "DM Sans", system-ui, sans-serif;
+  /* Fonts — Nunito (headlines), Open Sans (UI & body) */
+  --font-display: "Nunito", system-ui, sans-serif;
+  --font-sans: "Open Sans", system-ui, sans-serif;
 
   /* Stone palette (warm editorial tones) */
   --color-stone-50:  #FAFAF7;
@@ -72,7 +72,7 @@ html {
 body {
   background-color: #FAFAF7;
   color: #1A1A18;
-  font-family: "DM Sans", system-ui, sans-serif;
+  font-family: "Open Sans", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
