@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 // Arrays (multi-select) are joined as comma-separated strings.
 function flattenAnswers(answers: Record<string, string | string[]>) {
   return {
-    submitted_at: new Date().toISOString(),
+    submitted_at: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true }),
     city:          answers['q1_city'] ?? '',
     role:          answers['q2_role'] ?? '',
     housing:       answers['q3_housing'] ?? '',
